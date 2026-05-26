@@ -1,7 +1,6 @@
 # E-commerce Marketing & Sales — Power BI Dashboard Report
 
-> **Lab Final Examination — Business Intelligence Dashboards**  
-> FA23-BDS-021 · BS Data Science · COMSATS University · Spring 2026
+
 
 ---
 
@@ -14,7 +13,6 @@ A 5-page interactive Power BI report built on an Indian e-commerce company's mar
 ## Dashboard Pages
 
 ### Page 1 — Sales Overview
-![Sales Overview](screenshots/page1_sales_overview.png)
 
 **KPIs:** Total Revenue (₹18M) · Total Orders (8,155) · AOV (₹2.21K) · Return Rate (0.35) · Repeat Rate (0.46)
 
@@ -30,7 +28,6 @@ A 5-page interactive Power BI report built on an Indian e-commerce company's mar
 ---
 
 ### Page 2 — Marketing & Ads
-![Marketing & Ads](screenshots/page2_marketing_ads.png)
 
 **KPIs:** Sum of Purchases (6,654) · Blended ROAS (11.13) · Total Ad Spend (₹7M) · Avg CAC (₹1.12K) · Avg CTR (0.01)
 
@@ -47,7 +44,6 @@ A 5-page interactive Power BI report built on an Indian e-commerce company's mar
 ---
 
 ### Page 3 — Customer Analytics
-![Customer Analytics](screenshots/page3_customer_analytics.png)
 
 **KPIs:** Total Customers (17K) · Repeat Customers (7,748) · Repeat Rate (0.46) · Avg LTV (₹4.51K) · Avg Total Orders (1.78) · Avg Days to 2nd Purchase (410)
 
@@ -65,7 +61,6 @@ A 5-page interactive Power BI report built on an Indian e-commerce company's mar
 ---
 
 ### Page 4 — Inventory & Supply
-![Inventory & Supply](screenshots/page4_inventory_supply.png)
 
 **KPIs:** Gross Margin % (51%) · Dead Stock Count (68) · Count of SKU (55) · Low Stock Count (7,170) · Delivery Delay (1.87 days)
 
@@ -81,7 +76,6 @@ A 5-page interactive Power BI report built on an Indian e-commerce company's mar
 ---
 
 ### Page 5 — Product & Returns
-![Product & Returns](screenshots/page5_product_returns.png)
 
 **KPIs:** Avg Discount % (26.15%) · Items Returned (15K) · Items Sold (42K) · Item Return Rate (0.35) · Discount Impact (₹21M)
 
@@ -169,21 +163,22 @@ All DAX queries are documented separately in [`DAX_Queries.md`](DAX_Queries.md).
 /
 ├── README.md                        ← this file
 ├── DAX_Queries.md                   ← all DAX measures and calculated columns
-├── EcommerceReport.pbix             ← Power BI report file
+├── PowerBI
+    ├── ecommerce_sales_and_marketing.pbix         ← Power BI report file
 ├── data/
 │   ├── customers.csv
 │   ├── orders.csv
-│   ├── order_items.csv
-│   ├── meta_ads.csv
-│   ├── sessions.csv
-│   ├── session_detail.csv
-│   ├── inventory.csv
-│   ├── sku_master.csv
-│   └── procurement.csv
+│   ├── order_line_items.csv
+│   ├── meta_ads_campaigns.csv
+│   ├── website_sessions.csv
+│   ├── website_daily.csv
+│   ├── inventory_snapshots.csv
+│   ├── sku_catalog.csv
+│   └── purchase_orders.csv
 └── screenshots/
-    ├── page1_sales_overview.png
-    ├── page2_marketing_ads.png
-    ├── page3_customer_analytics.png
-    ├── page4_inventory_supply.png
-    └── page5_product_returns.png
+    ├── 1 - Sales & Overview.png
+    ├── 2 - Marketing & Ads.png
+    ├── 3 - Customer Analytics.png
+    ├── 4 - Inventory & Supply.png
+    └── 5 - Product & Returns.png
 ```
